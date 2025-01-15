@@ -57,8 +57,16 @@ CMD [ "gunicorn","--bind","0.0.0.0:5000", "app:app" ]
 
 ## Observações
 - Certifique-se de que a porta **8080** está disponível no host antes de executar o contêiner.
-- Utilize o comando abaixo para verificar o log do contêiner, caso necessário:
-  ```bash
-  sudo docker logs <container_id>
-  ```
+🛠️ Comandos Úteis
+Remover todos os contêineres antigos:
+docker container rm -f $(docker container ls -qa)
+
+
+Construir a imagem:
+docker build -t <nome-da-imagem>:<tag> .
+Executar o contêiner:
+
+- Executar o contêiner:
+docker container run -d -p <porta-local>:5000 <nome-da-imagem>:<tag>
+
 
