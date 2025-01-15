@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: conversao-distancia-fakeshop
+spec:
+  replicas: 1 # qtd de pods
+  selector:
+    matchLabels:
+      app: conversao-distancia-fakeshop
+  template:
+    metadata:
+      labels:
+        app: conversao-distancia-fakeshop
+    spec:
+      containers:
+        - name: conversao-distancia-fakeshop
+          image: jose2301/conversao-distancia-fakeshop:v1
+          ports:
+          - containerPort: 5000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: conversao-distancia-fakeshop
+spec:
+  selector: 
+    app: conversao-distancia-fakeshop
+  ports: 
+  - port: 80
+    targetPort: 5000
+    nodePort: 30000
+  type: NodePort
+  
