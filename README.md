@@ -3,7 +3,8 @@
 ## Descrição
 Este projeto é uma aplicação simples de conversão de distâncias, desenvolvida em Python e disponibilizada para uso via um contêiner Docker. O objetivo principal é permitir que os usuários convertam diferentes unidades de distância, como metros para quilômetros, de forma rápida e acessível.
 
-![Interface da aplicação](image.png)
+![image](https://github.com/user-attachments/assets/16195380-bb3d-46f0-bc13-9b3be1dc537b)
+
 
 ## Tarefa Prática
 
@@ -25,7 +26,6 @@ Este projeto é uma aplicação simples de conversão de distâncias, desenvolvi
 3. Acesse a aplicação no navegador:
    [http://localhost:8080/](http://localhost:8080/)
 
-   ![image](https://github.com/user-attachments/assets/cfa4eb84-71d0-4f5c-a6d9-f2b743e0fce6)
 
 
 ### 3. Entrega
